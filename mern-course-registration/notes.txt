@@ -15,4 +15,4 @@ npm install axios    -promise based http client for making requests from
 npx -used to run rode.js packages without installing them globally
 #create components and structurer
 create components-CourseForm.js,CourseList.js
-edit files 
+edit files -CourseForm.js,CourseList.js,App.js
