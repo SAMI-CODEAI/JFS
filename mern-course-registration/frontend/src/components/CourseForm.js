@@ -27,4 +27,5 @@ function CourseForm({ course, onSubmit }) {
                 <button type="submit">{course ? 'Update':'Add'}Course</button>
             </form>
         );
-    };
+    }
+    export default CourseForm;
