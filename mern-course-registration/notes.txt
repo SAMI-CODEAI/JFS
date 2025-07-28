@@ -1,0 +1,18 @@
+npm init -y initialises node environment
+type filename.txt to know the contetents of a filenamenode 
+server.js-to run the server
+
+
+
+
+
+-------------------------------------------
+FRONTEND
+#react setup
+PS E:\PLACEMENTS\Java_FullStack\mern-course-registration\frontend> npx create-react-app@latest .
+#install Axios:
+npm install axios    -promise based http client for making requests from
+npx -used to run rode.js packages without installing them globally
+#create components and structurer
+create components-CourseForm.js,CourseList.js
+edit files 
