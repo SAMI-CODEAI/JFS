@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,61 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+/* App.css */
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
 }

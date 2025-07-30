@@ -1,6 +1,6 @@
 npm init -y initialises node environment
-type filename.txt to know the contetents of a filenamenode 
-server.js-to run the server
+type filename.txt to know the contetents of a filename
+node server.js-to run the server
 
 
 
@@ -16,3 +16,6 @@ npx -used to run rode.js packages without installing them globally
 #create components and structurer
 create components-CourseForm.js,CourseList.js
 edit files -CourseForm.js,CourseList.js,App.js
+
+run :PS D:\PLACEMENTS\Java_FullStack\mern-course-registration> cd .\frontend\             
+PS D:\PLACEMENTS\Java_FullStack\mern-course-registration\frontend> npm start        
