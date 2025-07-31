@@ -1,8 +1,0 @@
-mkdir mern-calc
-cd 
-mkdir backend
-PS D:\PLACEMENTS\Java_FullStack\mern-calc> cd .\backend\
-PS D:\PLACEMENTS\Java_FullStack\mern-calc\backend> npm init -y
-Wrote to D:\PLACEMENTS\Java_FullStack\mern-calc\backend\package.json:
-
-PS D:\PLACEMENTS\Java_FullStack\mern-calc\backend> npm install express cors

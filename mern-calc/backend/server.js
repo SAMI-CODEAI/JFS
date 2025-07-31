@@ -7,37 +7,46 @@ app.listen(5000, () => {
     console.log('Server is running on port 5000');
 });
 
-app.get('/', (req, res) => {
-    const a = parseFloat(req.query.n1);
-    const b = parseFloat(req.query.n2);
-    const op = req.query.op || '+'; // Default to '+' if not provided
+app.get('/api/calc', (req, res) => {
+    // res.send('Hello from the server!');
+    const a=parseFloat(req.query.a);
+    const b=parseFloat(req.query.b);
+    let op=req.query.op;
+    // if(a==NaN || b==NaN){
+    //     res.send("Invalid URL");
+    //     exit(0);
+    // }
+    let result=0;
+    switch(op){
+        case "add": result=a+b;
+                    operator='+';
+                    break;
+        case "sub": result=a-b;
+                    operator='-';
+                    break;
+        case "mul": result=a*b;
+                    operator='*';
+                    break;
+        case "div": result=a/b;
+                    operator='/';
+                    break;
 
-    let result;
-    let operationSymbol;
+    }
+    console.log('Result: '+result);
+    res.send(`The sum of ${a} ${operator} ${b} is ${result}`);
+});
 
-    switch (op) {
-        case '+':
-            result = a + b;
-            operationSymbol = '+';
-            break;
-        case '-':
-            result = a - b;
-            operationSymbol = '-';
-            break;
-        case '*':
-            result = a * b;
-            operationSymbol = '*';
-            break;
-        case '/':
-            result = a / b;
-            operationSymbol = '/';
-            break;
-        default:
-            return res.status(400).send(`Invalid operation: ${op}`);
+app.get('/api/factorial', (req, res) => {
+    const n = parseFloat(req.query.n1);
+    let fact = 1;
+
+    for (let i = 2; i <= n; i++) {
+        fact *= i;
     }
 
-    console.log(`Result: ${result}`);
-    res.send(`The result of ${a} ${operationSymbol} ${b} = ${result}`);
+    console.log("Result: " + fact);
+    res.send(`Factorial of ${n} = ${fact}`);
 });
+
+
 // http://localhost:5000/?n1=10&n2=5
-// http://localhost:5000/?n1=10&n2=5&op=*
